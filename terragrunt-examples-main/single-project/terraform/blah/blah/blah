@@ -1,1 +1,4 @@
 
+output "dummy" {
+  value = dummy
+}
