@@ -3,5 +3,5 @@ resource "random_pet" "this" {
 }
 
 output "dummy" {
-  value = "dummy"
+  value = "dummaay"
 }
