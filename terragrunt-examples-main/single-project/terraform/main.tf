@@ -7,8 +7,8 @@ resource "random_pet" "this" {
   length = 5
 }
 
-resource "aws_s3_bucket" "my_bucketbiyfhdp" {
-  bucket = "my-unique-bucket-name" # Bucket names must be unique across all existing bucket names in Amazon S3
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "my_bucketbiyfhdp" # Bucket names must be unique across all existing bucket names in Amazon S3
   acl    = "private" # Access control list
 
   tags = {
