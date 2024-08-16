@@ -8,7 +8,7 @@ locals {
 
 inputs = {
   spacelift_stack_name = local.name
-  spacelift_stack_labels = toset(["stack:terraform"])
+  spacelift_stack_labels = ["stack:terraform"]
 }
 
 remote_state {
