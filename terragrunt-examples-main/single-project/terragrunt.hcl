@@ -7,5 +7,5 @@ locals {
 }
 
 inputs = {
-  spacelift_stack_labels = locals.labels
+  spacelift_stack_labels = local.labels
 }
