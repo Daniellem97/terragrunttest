@@ -31,4 +31,18 @@ resource "aws_s3_bucket" "my_bucket" {
   }
 }
 
+resource "spacelift_stack" "this" {
+ github_enterprise {
+    namespace = "Daniellem97"
+  }
 
+branch = "main"
+name = "labelsdebug"
+repository = "securitygroups"
+labels            = var.spacelift_stack_labels
+}
+
+variable "spacelift_stack_labels" {
+  description = "Stack labels"
+  type        = set(string)
+}
