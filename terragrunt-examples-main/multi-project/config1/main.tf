@@ -29,10 +29,15 @@ resource "spacelift_stack" "this" {
 branch = "main"
 repository = "securitygroups"
 name            = var.spacelift_stack_name
+labels = var.spacelift_stack_labels
 }
 
 variable "spacelift_stack_name" {
   description = "name"
   type        = string
+}
+
+variable "spacelift_stack_labels" {
+  description = "name"
 }
 
