@@ -11,6 +11,10 @@ terraform {
   }
 }
 
+terraform {
+  backend "s3" {}
+}
+
 provider "spacelift" {}
 
 provider "aws" {
