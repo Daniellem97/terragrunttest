@@ -38,6 +38,7 @@ variable "spacelift_stack_name" {
 }
 
 variable "spacelift_stack_labels" {
-  description = "name"
+  description = "name" 
+  type        = set(string) 
 }
 
