@@ -31,7 +31,7 @@ repository = "securitygroups"
 name            = var.spacelift_stack_name
 }
 
-variable "spacelift_stack_names" {
+variable "spacelift_stack_name" {
   description = "name"
   type        = string
 }
