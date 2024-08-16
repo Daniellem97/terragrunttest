@@ -16,10 +16,6 @@ remote_state {
   }
 }
 
-before_init = [
-    "tfenv install"
-  ]
-
-  before_plan = [
+before_plan = [
     "tfenv install"
   ]
