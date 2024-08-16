@@ -17,10 +17,6 @@ provider "aws" {
   region = "us-west-2"  # You can change the region as needed
 }
 
-terraform {
-  backend "s3" {}
-}
-
 resource "spacelift_stack" "this" {
  github_enterprise {
     namespace = "Daniellem97"
