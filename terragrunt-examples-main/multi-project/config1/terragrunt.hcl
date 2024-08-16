@@ -1,10 +1,5 @@
 terraform {
   source = "./"
-
-  before_hook "switch_tf_version" {
-    commands = ["init", "apply", "plan"]  # List the Terraform commands for which you want the hook to run
-    execute  = ["tfenv", "install", "1.5.5"]
-  }
 }
 
 inputs = {}
