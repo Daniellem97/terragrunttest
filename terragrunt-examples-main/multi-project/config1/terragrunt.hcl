@@ -15,3 +15,11 @@ remote_state {
     skip_bucket_versioning = true
   }
 }
+
+before_init = [
+    "tfenv install"
+  ]
+
+  before_plan = [
+    "tfenv install"
+  ]
