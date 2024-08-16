@@ -7,11 +7,11 @@ terraform {
 }
 
 locals {
-  labels = ["stack:terraform"]
+  name = "test"
 }
 
 inputs = {
-  spacelift_stack_labels = toset(local.labels)  # Ensure this line correctly references the local variable
+  spacelift_stack_name = local.name
 }
 
 remote_state {
