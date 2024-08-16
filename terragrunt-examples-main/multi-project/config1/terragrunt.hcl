@@ -2,10 +2,6 @@ terraform {
   source = "./"
 }
 
-terraform {
-  source = "./"
-}
-
 locals {
   name = "test"
 }
