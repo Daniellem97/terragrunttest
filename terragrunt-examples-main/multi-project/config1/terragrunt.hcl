@@ -4,12 +4,11 @@ terraform {
 
 locals {
   name = "test"
-  labels = ["stack:terraform"]
 }
 
 inputs = {
   spacelift_stack_name = local.name
-  spacelift_stack_labels = local.labels
+  spacelift_stack_labels = toset(["stack:terraform"])
 }
 
 remote_state {
