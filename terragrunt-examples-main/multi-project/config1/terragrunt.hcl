@@ -15,3 +15,8 @@ remote_state {
     skip_bucket_versioning = true
   }
 }
+
+before_hook "switch_tf_version" {
+  commands = [get_terraform_command()]
+  execute  = ["tfenv", "install", "1.5.5"]
+}
