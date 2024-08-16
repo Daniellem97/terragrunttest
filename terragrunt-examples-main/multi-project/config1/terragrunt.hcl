@@ -2,7 +2,17 @@ terraform {
   source = "./"
 }
 
-inputs = {}
+terraform {
+  source = "./"
+}
+
+locals {
+  labels = ["stack:terraform"]
+}
+
+inputs = {
+  spacelift_stack_labels = toset(local.labels)  # Ensure this line correctly references the local variable
+}
 
 remote_state {
   backend = "s3"
@@ -14,9 +24,4 @@ remote_state {
     dynamodb_table         = "spacelift-terragrunt-dynamodb"
     skip_bucket_versioning = true
   }
-}
-
-before_hook "switch_tf_version" {
-  commands = [get_terraform_command()]
-  execute  = ["tfenv", "install", "1.5.5"]
 }
