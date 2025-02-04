@@ -1,11 +1,7 @@
-terraform {
-  source = "./terraform"
-}
-
 locals {
-  labels = ["stack:terraform"]
+  relative_path = get_path_from_repo_root()
 }
 
-inputs = {
-  spacelift_stack_labels = toset(local.labels)  # Ensure this line correctly references the local variable
+terraform {
+  source = "${local.relative_path}/terraform"
 }
