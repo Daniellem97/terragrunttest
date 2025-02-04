@@ -22,7 +22,7 @@ resource "random_pet" "this" {
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "mybuckeasdaastbiyfhdp" # Bucket names must be unique across all existing bucket names in Amazon S3
+  bucket = "mybg8787gip" # Bucket names must be unique across all existing bucket names in Amazon S3
   acl    = "private" # Access control list
 
   tags = {
@@ -37,7 +37,7 @@ resource "spacelift_stack" "thfdafdais" {
   }
 
 branch = "main"
-name = "labelsdebug"
+name = "labelsdebugnew"
 repository = "securitygroups"
 }
 
