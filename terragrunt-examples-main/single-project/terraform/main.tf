@@ -39,10 +39,5 @@ resource "spacelift_stack" "this" {
 branch = "main"
 name = "labelsdebug"
 repository = "securitygroups"
-labels            = var.spacelift_stack_labels
 }
 
-variable "spacelift_stack_labels" {
-  description = "Stack labels"
-  type        = set(string)
-}
