@@ -1,9 +1,9 @@
 locals {
-  relative_path = get_path_from_repo_root()
+  repo_root = get_path_from_repo_root()
 }
 
 inputs = {
-  test_path = local.relative_path
+  repo_root_path = local.repo_root
 }
 
 terraform {
