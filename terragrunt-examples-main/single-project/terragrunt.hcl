@@ -3,5 +3,5 @@ locals {
 }
 
 terraform {
-  source = "${local.relative_path}/terraform"
+  source = "./terraform"
 }
