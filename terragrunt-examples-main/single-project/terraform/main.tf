@@ -31,7 +31,7 @@ resource "aws_s3_bucket" "my_bucket" {
   }
 }
 
-resource "spacelift_stack" "this" {
+resource "spacelift_stack" "thfdafdais" {
  github_enterprise {
     namespace = "Daniellem97"
   }
